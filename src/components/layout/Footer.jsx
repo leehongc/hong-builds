@@ -7,9 +7,6 @@ const Footer = () => {
           </p>
           <div className="flex justify-center space-x-6 mt-4">
             <a href="#" className="text-gray-600 hover:text-gray-900">
-              <i className="fab fa-linkedin text-xl"></i>
-            </a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">
               <i className="fab fa-github text-xl"></i>
             </a>
             <a href="#" className="text-gray-600 hover:text-gray-900">
