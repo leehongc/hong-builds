@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin } from 'lucide-react';
 
 const SocialLink = ({ href, icon: Icon, label }) => (
   <a 
@@ -12,9 +12,8 @@ const SocialLink = ({ href, icon: Icon, label }) => (
 
 const Footer = () => {
   const socialLinks = [
-    { href: "#", icon: Github, label: "GitHub" },
-    { href: "#", icon: Linkedin, label: "LinkedIn" }, 
-    { href: "#", icon: Mail, label: "Email" }
+    { href: "https://github.com/leehongc", icon: Github, label: "GitHub" },
+    { href: "https://www.linkedin.com/in/leehungchen/", icon: Linkedin, label: "LinkedIn" }
   ];
 
   return (
