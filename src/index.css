@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+
+    /* Contact section */
+
     .input-field {
       @apply w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-lime-500;
     }
@@ -27,6 +30,7 @@
       @apply w-full py-3 bg-lime-500 text-white rounded-lg hover:bg-lime-600 transition-colors;
     }
 
+    /* Home section */
 
     .hero-section {
         @apply min-h-screen bg-white flex items-center;
@@ -47,6 +51,8 @@
     .hero-description {
     @apply text-xl text-gray-600 max-w-2xl mx-auto mb-8;
     }
+
+    /* Header section */
 
     .header {
     @apply sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b px-6 py-4;
@@ -84,5 +90,25 @@
     @apply md:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors;
     }
 
-      
+    /* Footer section */
+
+    .footer {
+        @apply bg-white py-8;
+      }
+    
+    .footer-container {
+    @apply max-w-7xl mx-auto px-4;
+    }
+
+    .footer-text {
+    @apply text-center text-gray-600;
+    }
+
+    .social-links {
+    @apply flex justify-center space-x-6 mt-4;
+    }
+
+    .social-link {
+    @apply text-gray-600 hover:text-gray-900 transition-colors;
+    }
   }

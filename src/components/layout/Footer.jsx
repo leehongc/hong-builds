@@ -1,24 +1,39 @@
+import { Github, Linkedin, Mail } from 'lucide-react';
+
+const SocialLink = ({ href, icon: Icon, label }) => (
+  <a 
+    href={href} 
+    className="social-link"
+    aria-label={label}
+  >
+    <Icon size={25} />
+  </a>
+);
+
 const Footer = () => {
-    return (
-      <footer className="bg-white py-8">
-        <div className="max-w-7xl mx-auto px-4">
-          <p className="text-center text-gray-600">
-            © {new Date().getFullYear()} Hong Builds. All rights reserved.
-          </p>
-          <div className="flex justify-center space-x-6 mt-4">
-            <a href="#" className="text-gray-600 hover:text-gray-900">
-              <i className="fab fa-github text-xl"></i>
-            </a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">
-              <i className="fab fa-bluesky text-xl"></i>
-            </a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">
-              <i className="fas fa-envelope text-xl"></i>
-            </a>
-          </div>
+  const socialLinks = [
+    { href: "#", icon: Github, label: "GitHub" },
+    { href: "#", icon: Linkedin, label: "LinkedIn" }, 
+    { href: "#", icon: Mail, label: "Email" }
+  ];
+
+  return (
+    <footer className="footer">
+      <div className="footer-container">
+        <p className="footer-text">
+          © {new Date().getFullYear()} Hong Builds. All rights reserved.
+        </p>
+        <div className="social-links">
+          {socialLinks.map((link) => (
+            <SocialLink 
+              key={link.label} 
+              {...link} 
+            />
+          ))}
         </div>
-      </footer>
-    );
-  };
-  
-  export default Footer;
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
