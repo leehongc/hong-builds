@@ -9,7 +9,7 @@ const Home = () => {
             <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
             I'm passionate about bridging the gap between scientific research and public understanding. I love working with data and creating applications that make complex scientific concepts accessible to everyone.
             </p>
-            <div className="flex justify-center gap-4">
+            {/* <div className="flex justify-center gap-4">
               <a 
                 href="#portfolio" 
                 className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
@@ -22,7 +22,7 @@ const Home = () => {
                 >
                 Contact Me
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
