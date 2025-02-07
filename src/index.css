@@ -26,4 +26,63 @@
     .btn-submit {
       @apply w-full py-3 bg-lime-500 text-white rounded-lg hover:bg-lime-600 transition-colors;
     }
+
+
+    .hero-section {
+        @apply min-h-screen bg-white flex items-center;
+      }
+    
+    .hero-container {
+    @apply max-w-7xl mx-auto px-4;
+    }
+
+    .hero-content {
+    @apply text-center;
+    }
+
+    .hero-title {
+    @apply text-5xl font-bold text-gray-800 mb-6;
+    }
+
+    .hero-description {
+    @apply text-xl text-gray-600 max-w-2xl mx-auto mb-8;
+    }
+
+    .header {
+    @apply sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b px-6 py-4;
+    }
+
+    .header-container {
+    @apply max-w-7xl mx-auto flex justify-between items-center;
+    }
+
+    .header-title {
+    @apply text-3xl font-bold;
+    }
+
+    .nav-link {
+    @apply text-gray-600 hover:text-gray-900 transition-colors;
+    }
+
+    .desktop-nav {
+    @apply hidden md:block;
+    }
+
+    .desktop-nav-list {
+    @apply flex space-x-8;
+    }
+
+    .mobile-nav {
+    @apply md:hidden mt-4;
+    }
+
+    .mobile-nav-list {
+    @apply flex flex-col space-y-4;
+    }
+
+    .hamburger-button {
+    @apply md:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors;
+    }
+
+      
   }

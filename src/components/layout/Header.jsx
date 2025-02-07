@@ -1,12 +1,27 @@
 import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
+
+const navItems = [
+  { href: '#home', label: 'Home' },
+  { href: '#portfolio', label: 'Portfolio' },
+  { href: '#contact', label: 'Contact' }
+];
+
+const NavLink = ({ href, children, className = '' }) => (
+  <a href={href} className={`nav-link ${className}`}>
+    {children}
+  </a>
+);
 
 const DesktopNav = () => {
   return (
-    <nav className="hidden md:block">
-      <ul className="flex space-x-8">
-        <li><a href="#home" className="text-gray-600 hover:text-gray-900">Home</a></li>
-        <li><a href="#portfolio" className="text-gray-600 hover:text-gray-900">Portfolio</a></li>
-        <li><a href="#contact" className="text-gray-600 hover:text-gray-900">Contact</a></li>
+    <nav className="desktop-nav">
+      <ul className="desktop-nav-list">
+        {navItems.map(({ href, label }) => (
+          <li key={href}>
+            <NavLink href={href}>{label}</NavLink>
+          </li>
+        ))}
       </ul>
     </nav>
   );
@@ -16,11 +31,15 @@ const MobileNav = ({ isMenuOpen }) => {
   if (!isMenuOpen) return null;
   
   return (
-    <nav className="md:hidden mt-4">
-      <ul className="flex flex-col space-y-4">
-        <li><a href="#home" className="text-gray-600 hover:text-gray-900 block">Home</a></li>
-        <li><a href="#portfolio" className="text-gray-600 hover:text-gray-900 block">Portfolio</a></li>
-        <li><a href="#contact" className="text-gray-600 hover:text-gray-900 block">Contact</a></li>
+    <nav className="mobile-nav">
+      <ul className="mobile-nav-list">
+        {navItems.map(({ href, label }) => (
+          <li key={href}>
+            <NavLink href={href} className="block">
+              {label}
+            </NavLink>
+          </li>
+        ))}
       </ul>
     </nav>
   );
@@ -30,14 +49,10 @@ const HamburgerButton = ({ isMenuOpen, onClick }) => {
   return (
     <button 
       onClick={onClick}
-      className="md:hidden"
+      className="hamburger-button"
       aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
     >
-      {isMenuOpen ? (
-        <i className="fas fa-times text-2xl"></i>
-      ) : (
-        <i className="fas fa-bars text-2xl"></i>
-      )}
+      {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
     </button>
   );
 };
@@ -48,9 +63,9 @@ const Header = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b px-6 py-4">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <h1 className="text-3xl font-bold">Hong Builds</h1>
+    <header className="header">
+      <div className="header-container">
+        <h1 className="header-title">Hong Builds</h1>
         
         <HamburgerButton 
           isMenuOpen={isMenuOpen} 
