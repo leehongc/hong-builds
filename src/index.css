@@ -90,6 +90,19 @@
       @apply md:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors;
     }
 
+    /* Portfolio section */
+    .portfolio-section {
+      @apply py-16 bg-gray-50;
+    }
+
+    .portfolio-container {
+      @apply max-w-7xl mx-auto px-4;
+    }
+
+    .portfolio-grid {
+      @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+    }
+    
     /* Footer section */
 
     .footer {
