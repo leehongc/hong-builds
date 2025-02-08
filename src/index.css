@@ -4,54 +4,6 @@
 
 @layer components {
 
-    /* Contact section */
-
-    .input-field {
-      @apply w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-lime-500;
-    }
-    
-    .container {
-      @apply max-w-3xl mx-auto px-4;
-    }
-    
-    .section-title {
-      @apply text-4xl font-bold text-center mb-8;
-    }
-    
-    .section-description {
-      @apply text-center text-gray-600 mb-12;
-    }
-    
-    .form-container {
-      @apply space-y-6;
-    }
-    
-    .btn-submit {
-      @apply w-full py-3 bg-lime-500 text-white rounded-lg hover:bg-lime-600 transition-colors;
-    }
-
-    /* Home section */
-
-    .hero-section {
-      @apply min-h-screen bg-white flex items-center;
-    }
-    
-    .hero-container {
-      @apply max-w-7xl mx-auto px-4;
-    }
-
-    .hero-content {
-      @apply text-center;
-    }
-
-    .hero-title {
-      @apply text-5xl font-bold text-gray-800 mb-6;
-    }
-
-    .hero-description {
-      @apply text-xl text-gray-600 max-w-2xl mx-auto mb-8;
-    }
-
     /* Header section */
 
     .header {
@@ -89,6 +41,28 @@
     .hamburger-button {
       @apply md:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors;
     }
+    
+    /* Home section */
+
+    .hero-section {
+      @apply min-h-screen bg-white flex items-center;
+    }
+    
+    .hero-container {
+      @apply max-w-7xl mx-auto px-4;
+    }
+
+    .hero-content {
+      @apply text-center;
+    }
+
+    .hero-title {
+      @apply text-5xl font-bold text-gray-800 mb-6;
+    }
+
+    .hero-description {
+      @apply text-xl text-gray-600 max-w-2xl mx-auto mb-8;
+    }
 
     /* Portfolio section */
     .portfolio-section {
@@ -101,6 +75,32 @@
 
     .portfolio-grid {
       @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+    }
+    
+    /* Contact section */
+
+    .input-field {
+      @apply w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-lime-500;
+    }
+    
+    .container {
+      @apply max-w-3xl mx-auto px-4;
+    }
+    
+    .section-title {
+      @apply text-4xl font-bold text-center mb-8;
+    }
+    
+    .section-description {
+      @apply text-center text-gray-600 mb-12;
+    }
+    
+    .form-container {
+      @apply space-y-6;
+    }
+    
+    .btn-submit {
+      @apply w-full py-3 bg-lime-500 text-white rounded-lg hover:bg-lime-600 transition-colors;
     }
     
     /* Footer section */
