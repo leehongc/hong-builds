@@ -8,6 +8,13 @@ const projectsData = [
     link: 'https://www.buildingbloq.com'
   },
   {
+    title: 'Boobaloo\'s Kitchen',
+    description: 'A modern recipe management web application built with React for sharing and organizing dessert and main dish recipes. Features responsive design, component-based architecture, and client-side routing.',
+    image: 'https://placehold.co/400x250',
+    technologies: ['React', 'Vite', 'Tailwind CSS', 'React Router', 'GitHub Pages'],
+    link: 'https://leehongc.github.io/BooBaLoosKitchen/'
+  },
+  {
     title: 'Recipe Ingredient List Creator',
     description: 'A streamlined web tool for generating clean, well-formatted ingredient lists for recipes. Features ingredient autosuggest, multiple export formats (plaintext/CSV), responsive design, and dynamic ingredient management.',
     image: 'https://placehold.co/400x250',
