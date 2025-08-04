@@ -1,11 +1,11 @@
 // src/data/projects.js
 const projectsData = [
   {
-    title: 'Recipe Application',
-    description: 'A full-stack recipe management application built with React, Node.js, Express, and Mongo. Features include user authentication, recipe creation, and search functionality.',
+    title: 'Building Bloq',
+    description: 'A full-stack task management application with goal creation, task tracking, and social features. Users can create goals, manage tasks, follow other users\' task lists, and track completion progress with role-based permissions.',
     image: 'https://placehold.co/400x250',
-    technologies: ['React', 'Node.js', 'Express', 'Mongo'],
-    link: 'https://your-project-url.com'
+    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS', 'Docker'],
+    link: 'https://www.buildingbloq.com'
   },
   {
     title: 'Weather Dashboard',
