@@ -8,11 +8,11 @@ const projectsData = [
     link: 'https://www.buildingbloq.com'
   },
   {
-    title: 'Weather Dashboard',
-    description: 'A weather dashboard that displays current weather conditions and forecasts. Built using React and integrates with the OpenWeather API.',
+    title: 'Recipe Ingredient List Creator',
+    description: 'A streamlined web tool for generating clean, well-formatted ingredient lists for recipes. Features ingredient autosuggest, multiple export formats (plaintext/CSV), responsive design, and dynamic ingredient management.',
     image: 'https://placehold.co/400x250',
-    technologies: ['React', 'OpenWeather API', 'TailwindCSS'],
-    link: 'https://your-project-url.com'
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    link: 'https://leehongc.github.io/recipe_ingredients_formatter/'
   },
 ];
 
