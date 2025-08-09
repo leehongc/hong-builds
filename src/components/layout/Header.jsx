@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
 const navItems = [
@@ -8,11 +9,25 @@ const navItems = [
   { href: '#contact', label: 'Contact' }
 ];
 
-const NavLink = ({ href, children, className = '' }) => (
-  <a href={href} className={`nav-link ${className}`}>
-    {children}
-  </a>
-);
+const NavLink = ({ href, children, className = '' }) => {
+  const location = useLocation();
+  
+  // If we're on a blog post page, go back to homepage first
+  if (location.pathname.startsWith('/blog/')) {
+    return (
+      <Link to={`/${href}`} className={`nav-link ${className}`}>
+        {children}
+      </Link>
+    );
+  }
+  
+  // Otherwise, use regular anchor links for same-page navigation
+  return (
+    <a href={href} className={`nav-link ${className}`}>
+      {children}
+    </a>
+  );
+};
 
 const DesktopNav = () => {
   return (
@@ -66,7 +81,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
-        <h1 className="header-title">Hong Builds</h1>
+        <Link to="/" className="header-title">Hong Builds</Link>
         
         <HamburgerButton 
           isMenuOpen={isMenuOpen} 
