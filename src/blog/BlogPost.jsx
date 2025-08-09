@@ -75,19 +75,19 @@ const BlogPost = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-16">
-      <article className="max-w-4xl mx-auto px-4">
-        <header className="mb-8">
+    <div className="blog-post-container">
+      <article className="blog-post-article">
+        <header className="blog-post-header">
           <Link 
             to="/#blog" 
-            className="text-blue-600 hover:text-blue-800 mb-4 inline-block"
+            className="blog-post-back-link"
           >
             ← Back to blog
           </Link>
           
-          <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
+          <h1 className="blog-post-title">{post.title}</h1>
           
-          <div className="text-sm text-gray-600 mb-4">
+          <div className="blog-post-meta">
             <span>{formatDate(post.created)}</span>
             {post.updated && post.updated !== post.created && (
               <span> • Updated {formatDate(post.updated)}</span>
@@ -95,12 +95,9 @@ const BlogPost = () => {
           </div>
           
           {post.tags && post.tags.length > 0 && (
-            <div className="flex flex-wrap gap-2 mb-6">
+            <div className="blog-post-tags">
               {post.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded"
-                >
+                <span key={tag} className="blog-post-tag">
                   {tag}
                 </span>
               ))}
@@ -108,8 +105,10 @@ const BlogPost = () => {
           )}
         </header>
 
-        <div className="prose prose-lg max-w-none bg-white p-8 rounded-lg shadow-sm">
-          <ReactMarkdown>{post.body}</ReactMarkdown>
+        <div className="blog-post-content">
+          <div className="blog-markdown">
+            <ReactMarkdown>{post.body}</ReactMarkdown>
+          </div>
         </div>
       </article>
     </div>
