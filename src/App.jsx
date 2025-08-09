@@ -1,7 +1,7 @@
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Portfolio from './components/sections/Portfolio';
-import Blog from './blog/Blog';
+import Blog from './components/sections/Blog';
 import Home from './components/sections/Home';
 import Contact from './components/sections/Contact';
 

@@ -3,7 +3,6 @@ title: "My First Blog Post"
 slug: "my-first-blog-post"
 created: "2025-01-15"
 updated: "2025-01-15"
-excerpt: "This is my very first blog post where I talk about starting my blog journey."
 tags: ["welcome", "blogging", "first-post"]
 ---
 
