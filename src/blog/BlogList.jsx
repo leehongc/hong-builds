@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { formatDate } from '../utils/dateUtils';
 import { parseFrontmatter } from '../utils/markdownUtils';
+import { Link } from 'react-router-dom';
 
 const BlogList = () => {
   const [posts, setPosts] = useState([]);
@@ -71,9 +72,12 @@ const BlogList = () => {
               </div>
             )}
             
-            <div className="text-blue-600 hover:text-blue-800 font-medium cursor-pointer">
+            <Link 
+              to={`/blog/${post.slug}`}
+              className="text-blue-600 hover:text-blue-800 font-medium"
+            >
               Read more →
-            </div>
+            </Link>
           </article>
         ))}
       </div>
