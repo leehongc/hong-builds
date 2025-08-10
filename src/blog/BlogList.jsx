@@ -44,7 +44,7 @@ const BlogList = () => {
   return (
       <div className="space-y-8">
         {posts.map((post) => (
-          <article key={post.slug} className="bg-white border-b border-gray-200 p-7 rounded-lg">
+          <article key={post.slug} className="bg-gray-50 bg-opacity-60 shadow-sm p-7 rounded-lg">
             <h2 className="text-2xl font-bold mb-2 hover:text-blue-600 transition-colors cursor-pointer">
               {post.title}
             </h2>

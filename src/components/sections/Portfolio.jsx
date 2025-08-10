@@ -3,7 +3,7 @@ import ProjectCard from '../ProjectCard';
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="portfolio-section">
+    <section id="portfolio" className="dark-section">
       <div className="portfolio-container">
         <h2 className="section-title">Portfolio</h2>
         <p className="section-description">

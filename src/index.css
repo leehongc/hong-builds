@@ -42,6 +42,14 @@
   @apply md:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors;
 }
 
+.light-section {
+  @apply py-16 bg-white;
+}
+
+.dark-section {
+  @apply py-16 bg-gray-50;
+}
+
 /* Home section */
 
 .hero-section {
@@ -65,10 +73,6 @@
 }
 
 /* Portfolio section */
-.portfolio-section {
-  @apply py-16 bg-gray-50;
-}
-
 .portfolio-container {
   @apply max-w-7xl mx-auto px-4;
 }
